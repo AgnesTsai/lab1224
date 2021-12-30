@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Character</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p id="ans"></p>
+	<script>
+		var text;
+		var query;
+		text = window.prompt("input data");
+		query = window.prompt("input a char to search");
+		var text1 = text.indexOf(query);
+		var text2 = text.lastIndexOf(query);
+		var text3 = text.indexOf(query,3);
+		document.getElementById("ans").innerHTML = text1 + "<br>" + text2 + "<br>" + text3;
+	</script>
+
+</body>
+</html>
